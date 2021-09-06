@@ -1,0 +1,553 @@
+<html><head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.7"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script>
+   function openNav() 
+   {
+  document.getElementById("slide").style.width = "250px";
+}
+
+function closeNav() 
+{
+  document.getElementById("slide").style.width = "0";
+}
+</script> 
+  <style>.nev
+{
+  height: 1900px;
+  width: 0px;
+  margin-left: -10;
+  margin-top: -90px;
+  background-color: white;
+      transition: width 1s ,transform 1s;
+  display: text;
+  position: absolute;
+ 
+  float: left;
+}
+.nev:hover
+{
+  width: 300px;
+  
+  border-right: 7px solid rgb(0,0,0,0.3);
+}
+.txt
+{
+  margin-top: 30px;
+  overflow-x: hidden; 
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+   .header1
+           {
+           hight: 100px;
+           width: 1390px;
+           padding-left: 70px;
+           padding-top: 17px;
+           padding-bottom: 17px;
+           font-size: 20px;
+         
+           background-color: white;
+           font-weight: bold;
+           }
+       a
+           {
+           text-decoration:  none;
+           color: black;  
+           }
+       a:active
+       {
+         text-decoration:  none;
+           color: red;  
+       }
+         
+         .navigation
+         {
+           width: 1390px;
+         margin-left: -10;
+           padding-top: 15px;
+           padding-bottom: 15px;
+           margin-top: 5px;
+           hight: 50px;
+         
+           font-size: 20px;
+           background-color: #999999;
+         }
+         span
+         {
+           padding-left: 83px;
+         }
+         .b1{
+           font-size: 25px;
+           padding-left: 100px;
+           font-family: "Times New Roman", Times, serif;
+           text-shadow: 1px 1px #999999;
+         }
+         .icon
+         {
+           font-size: 25px;
+           font-weight: bold;
+            padding-left: 40px;
+         }
+            .icon1
+         {
+           
+           font-size: 25px;
+           font-weight: bold;
+          margin-left: 280px;
+         
+         }
+         .lp
+         {
+           
+           border-bottom: 3px solid black;
+            font-size: 22px;
+           padding-left: 50px;
+           padding-right: 30px;
+         },
+         .me
+         {
+           hight: 10px;
+           width: 60px;
+           border: none;
+          }
+          .main
+          {
+            hight: 100%;
+            width: 1390px;
+            align: center;
+          }
+          .content{
+     hight: 100%;
+     width: 1390px;
+       margin-left: -10;
+    padding-left: 30px;
+    
+     background-image: url(h3.png);
+   
+     background-size: 100% 100%;
+     color: white;
+     font-size: 22px;
+     font-style: bold;
+    
+     }
+     .button1{
+  hight: 50px;
+  font-weight: bold;
+  width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ff0095;
+  font-size: 27px;
+    font-style: bold;
+    border-style: ridge;
+    border-radius: 55px;
+    border-width: 4px;
+    border-color: #eb0085;
+    margin-left: 20px;
+    margin-top: 200px;
+      color: black;
+  
+}
+
+.button2{
+  hight: 50px;
+  width: 600px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+ border-style: ridge;
+ border-radius: 55px;
+ border-width: 4px;
+  background-color: transparent;
+  font-size: 27px;
+  color: black;
+    font: bold;
+  
+    margin-left: 20px;
+      color: black;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.back{
+ // background-color: #e6e6e6;
+  background-color: #1794f2;
+  background-size: 100% 100%;
+}
+.text
+{
+  font-family: "Times New Roman", Times, serif;
+   padding-left: 30px;
+   background-color: white;
+  
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+ font-size: 20px;
+  hight: 100%;
+  width: 1390px;
+}
+j{
+  background-color: transperent;
+  max-hight: 100%;
+  max-width: 100%;
+  
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+ 
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+   
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 1s;
+ // padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}</style>
+ <style type="text/css" id="dcoder_stylesheet">.nev
+{
+  height: 1900px;
+  width: 0px;
+  margin-left: -10;
+  margin-top: -90px;
+  background-color: white;
+      transition: width 1s ,transform 1s;
+  display: text;
+  position: absolute;
+ 
+  float: left;
+}
+.nev:hover
+{
+  width: 300px;
+  
+  border-right: 7px solid rgb(0,0,0,0.3);
+}
+.txt
+{
+  margin-top: 30px;
+  overflow-x: hidden; 
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+   .header1
+           {
+           hight: 100px;
+           width: 1390px;
+           padding-left: 70px;
+           padding-top: 17px;
+           padding-bottom: 17px;
+           font-size: 20px;
+         
+           background-color: white;
+           font-weight: bold;
+           }
+       a
+           {
+           text-decoration:  none;
+           color: black;  
+           }
+       a:active
+       {
+         text-decoration:  none;
+           color: red;  
+       }
+         
+         .navigation
+         {
+           width: 1390px;
+         margin-left: -10;
+           padding-top: 15px;
+           padding-bottom: 15px;
+           margin-top: 5px;
+           hight: 50px;
+         
+           font-size: 20px;
+           background-color: #999999;
+         }
+         span
+         {
+           padding-left: 83px;
+         }
+         .b1{
+           font-size: 25px;
+           padding-left: 100px;
+           font-family: "Times New Roman", Times, serif;
+           text-shadow: 1px 1px #999999;
+         }
+         .icon
+         {
+           font-size: 25px;
+           font-weight: bold;
+            padding-left: 40px;
+         }
+            .icon1
+         {
+           
+           font-size: 25px;
+           font-weight: bold;
+          margin-left: 280px;
+         
+         }
+         .lp
+         {
+           
+           border-bottom: 3px solid black;
+            font-size: 22px;
+           padding-left: 50px;
+           padding-right: 30px;
+         },
+         .me
+         {
+           hight: 10px;
+           width: 60px;
+           border: none;
+          }
+          .main
+          {
+            hight: 100%;
+            width: 1390px;
+            align: center;
+          }
+          .content{
+     hight: 100%;
+     width: 1390px;
+       margin-left: -10;
+    padding-left: 30px;
+    
+     background-image: url(h3.png);
+   
+     background-size: 100% 100%;
+     color: white;
+     font-size: 22px;
+     font-style: bold;
+    
+     }
+     .button1{
+  hight: 50px;
+  font-weight: bold;
+  width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ff0095;
+  font-size: 27px;
+    font-style: bold;
+    border-style: ridge;
+    border-radius: 55px;
+    border-width: 4px;
+    border-color: #eb0085;
+    margin-left: 20px;
+    margin-top: 200px;
+      color: black;
+  
+}
+
+.button2{
+  hight: 50px;
+  width: 600px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+ border-style: ridge;
+ border-radius: 55px;
+ border-width: 4px;
+  background-color: transparent;
+  font-size: 27px;
+  color: black;
+    font: bold;
+  
+    margin-left: 20px;
+      color: black;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.back{
+ // background-color: #e6e6e6;
+  background-color: #1794f2;
+  background-size: 100% 100%;
+}
+.text
+{
+  font-family: "Times New Roman", Times, serif;
+   padding-left: 30px;
+   background-color: white;
+  
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+ font-size: 20px;
+  hight: 100%;
+  width: 1390px;
+}
+j{
+  background-color: transperent;
+  max-hight: 100%;
+  max-width: 100%;
+  
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+ 
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+   
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 1s;
+ // padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}</style></head> 
+ <body class="back"> 
+  <div class="container-fluid" style="margin-left: -15px;"> 
+   <div class="header1"> 
+    <div id="slide" class="sidenav"> 
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+     <a href="#">home</a> 
+     <a href="#">main</a> 
+     <a href="#">about us</a> 
+     <a href="#">Contact</a> 
+    </div> 
+    <b onclick="openNav()"><font size="6" style="margin-left: -50px;">☰</font></b> 
+    <b class="b1">E-Lancing</b> 
+    <span class="icon1"> <a href="register-ui.html" class="btn" name="register" align="left"> <b> 
+       <left> 
+        <font size="5.2">Registration</font> 
+       </left></b></a> </span> 
+    <a href="ui-login.html" class="btn" name="login"> <span class="icon">log in </span></a> 
+   </div> 
+   <div class="content"> 
+    <br> 
+    <h1> Hire The Best Frelancers For any Job,<br> Online. </h1> 
+    <br> 
+    <font size="5">millions of people use freelancer.com to turn thair <br> idea into reality </font> 
+    <br> 
+    <br> 
+    <form action="#"> 
+     <center> 
+      <input type="submit" class="button1" value="Hire A Freelancer"> 
+      <input type="submit" class="button2" value="Earn More Money as freelancer"> 
+      <br> 
+     </center> 
+    </form> 
+   </div> 
+   <div class="text"> 
+    <h1>💻&nbsp;&nbsp;Post a job</h1> 
+    <br> It’s free and easy to post a job. Simply fill in a title, description and budget and competitive bids 
+    <br>come within minutes 
+    <br> 
+    <h1> 🌐&nbsp;&nbsp;Choose freelancers</h1> 
+    <br> No job is too big or too small. We've got freelancers for jobs of any size or budget, across 1800+ 
+    <br>skills. No job is too complex. We can get it done! 
+    <br> 
+    <h1>🛡️Pay safely</h1> 
+    <br>Only pay for work when it has been completed and you're 100% satisfied with the quality 
+    <br>using our milestone payment system 
+    <br>
+    <br> Find professionals you can trust by browsing their samples of previous work and reading their profile reviews 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> 
+   </div> 
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">function openNav() {
+  document.getElementById("slide").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("slide").style.width = "0";
+}</script></body></html>
